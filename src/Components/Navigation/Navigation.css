@@ -9,9 +9,12 @@
 
 .NavTitle-component{
     font-size: 3.2em;
+    letter-spacing: 0.24em;
 }
 
 .NavButton{
+    font-weight: 700;
+    letter-spacing: 2px;
     background-color:black ;
     color:whitesmoke;
     height: 90%;
@@ -19,9 +22,34 @@
     margin-top:0.4em;
     box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
     text-align: center;
+    touch-action: manipulation;
 }
-.NavButtonContent{
-    padding-top:2.1em;
-    font-size: 0.7em;
+.NavButton{
+    padding-top:1.9em;
+    font-size: 0.9em;
+}
+
+.NavButton:focus {
+    text-decoration: none;
+}
+
+.NavButton:hover {
+    text-decoration: none;
+}
+
+.NavButton:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.NavButton:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
 }
 

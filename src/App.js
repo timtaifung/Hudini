@@ -1,5 +1,7 @@
 import './App.css';
 import Nav from "./Components/Navigation/Nav";
+import Intro from "./Components/Introduction/Intro";
+
 function App() {
   return (
     <div className="App">
@@ -7,7 +9,7 @@ function App() {
           <Nav/>
       </header>
       <main>
-
+          <Intro text="Welcome." delay={100}/>
       </main>
     </div>
   );
