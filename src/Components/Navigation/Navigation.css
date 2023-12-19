@@ -1,0 +1,23 @@
+.NavTitle{
+    padding-top:1.1em;
+    text-align: center;
+}
+
+.NavTitle-component{
+    font-size: 3.2em;
+}
+
+.NavButton{
+    background-color:black ;
+    color:whitesmoke;
+    height: 90%;
+    border-radius: 5px;
+    margin-top:0.4em;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    text-align: center;
+}
+.NavButtonContent{
+    padding-top:2.1em;
+    font-size: 0.7em;
+}
+
