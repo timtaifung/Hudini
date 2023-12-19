@@ -1,6 +1,7 @@
 import './App.css';
 import Nav from "./Components/Navigation/Nav";
 import Intro from "./Components/Introduction/Intro";
+import Pomodoro from "./Components/Pomodoro/PomodoroMain";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
           <Nav/>
       </header>
       <main>
-          <Intro text="Welcome." delay={100}/>
+          {/*<Intro text="Welcome." delay={100}/>*/}
+          <Pomodoro/>
       </main>
     </div>
   );

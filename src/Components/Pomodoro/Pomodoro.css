@@ -1,0 +1,143 @@
+.pomodoro-container{
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    font-family: monospace;
+    margin-top: 5%;
+    max-width: 1700px;
+}
+.pomodoro-title{
+    height: 1em;
+    font-weight: 700;
+    font-size: 5.2em;
+    line-height: 53px;
+    letter-spacing: 0.14em;
+}
+.column{
+    display: flex;
+    justify-content: center;
+    font-size: 3.125rem;
+    text-align: center;
+    width: 1.125em;
+}
+
+.pomo-desc{
+    font-size: 1.4em;
+    margin-bottom: 2rem;
+}
+
+.col-name{
+    padding-top: 7rem;
+}
+
+.pomo-timer{
+    justify-content: center;
+}
+
+.timer-box{
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    backface-visibility: hidden;
+    border-radius: .375rem;
+    border-style: solid;
+    border-width: .125rem;
+    color: #212121;
+    font-family: Circular,Helvetica,sans-serif;
+    font-size: 4.125em;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 2;
+    padding: 0.125em 0.15em;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+}
+
+.timer-box:not(:disabled):hover {
+    transform: scale(1.05);
+}
+
+.timer-box:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+}
+
+.timer-box:focus {
+    outline: 0 solid transparent;
+}
+
+.timer-box:focus:before {
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+}
+
+.timer-box:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+}
+
+.timer-box:focus:not(:focus-visible):before {
+    border-width: 0;
+}
+
+.timer-box:not(:disabled):active {
+    transform: translateY(.125rem);
+}
+
+.timer-class{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.button-up,
+.button-down {
+    position: relative;
+    padding: 0.1rem;
+    margin: 0.5em auto;
+    background: #000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+.button-down:hover {
+    transform: translate3d(0, 0.1rem, 0);
+}
+
+.button-up:hover {
+    transform: translate3d(0, -0.1rem, 0);
+}
+
+.button-up::after,
+.button-down::after {
+    content: "";
+    position: absolute;
+    left: 17px;
+    z-index: 11;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.button-up::after {
+    top: 1.25rem;
+    left: 0.8rem;
+    transform: rotate(45deg);
+}
+
+.button-down::after {
+    top: 0.5rem;
+    left: 0.8rem;
+    transform: rotate(225deg);
+}
+
+.pomo-buttom{
+    margin-top: 1.5rem;
+    justify-content: center;
+}
