@@ -7,8 +7,7 @@ import {
     DECREMENT_HOUR,
     RESET_COUNTER,
     SET_ALERT,
-    SET_STUDY,
-    SET_REST,
+    SET_TOGGLE,
 } from '../ActionTypes/actionTypes';
 
 const initialState = {
@@ -23,15 +22,10 @@ const initialState = {
 
 const pomodoroReducer = (state =initialState,action) =>{
     switch(action.type){
-        case SET_STUDY:
+        case SET_TOGGLE:
             return{
                 ...state,
-                currentMode: 0,
-            }
-        case SET_REST:
-            return{
-                ...state,
-                currentMode: 1,
+                currentMode: state.currentMode === 0 ? 1 : 0,
             }
         case INCREMENT_HOUR:
             return{

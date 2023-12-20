@@ -59,7 +59,7 @@ function PomoSetStudy(){
                     <div className="row button-down" onClick={() =>dispatch(decrementSecond())}></div>
                 </div>
             </div>
-            <div className="row pomo-mode">
+            <div className="row pomo-mode study-text">
                 <p>Study Time</p>
             </div>
 
