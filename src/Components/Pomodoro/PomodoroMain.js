@@ -1,6 +1,7 @@
 import "./Pomodoro.css"
-import PomoSetting from "./PomoSetting";
+import PomoSetStudy from "./PomoSetStudy";
 import IntroButton from "../Introduction/IntroButton";
+import PomoSetRest from "./PomoSetRest";
 
 function Pomodoro(){
     return(
@@ -12,19 +13,9 @@ function Pomodoro(){
                 <p>The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. Set your timer for 25 minutes, and focus on a single task until the timer rings. When your session ends, mark off one pomodoro and record what you completed. Then enjoy a five-minute break. After four pomodoros, take a longer, more restorative 15-30 minute break.</p>
             </div>
             <div className="row">
-                <PomoSetting/>
+                <PomoSetRest/>
             </div>
-            <div className="row pomo-buttom">
-                <div className="col-2">
-                    <IntroButton title="Start"/>
-                </div>
-                <div className="col-2">
-                    <IntroButton title="Pause"/>
-                </div>
-                <div className="col-2">
-                    <IntroButton title="Reset"/>
-                </div>
-            </div>
+
         </div>
     )
 }

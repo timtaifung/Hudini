@@ -4,14 +4,15 @@ import {
     decrementMinute, decrementSecond,
     incrementHour,
     incrementMinute,
-    incrementSecond
+    incrementSecond, resetCounter
 } from "../../ActionTypes/actionTypes";
+import IntroButton from "../Introduction/IntroButton";
 
-function PomoSetting(){
+function PomoSetStudy(){
     const state =useSelector(state => state.pomodoro);
     const dispatch = useDispatch();
     return(
-        <div className="pomo-timer container">
+        <div className="pomo-timer container pomo-studySet">
             <div className="row pomo-timer">
                 <div className="timer-box-cont col-1">
                     <div className="row">
@@ -19,11 +20,12 @@ function PomoSetting(){
                     </div>
                     <div className="row timer-box">
                         <p>{state.setHour}</p>
+                        <div className="timer-class">
+                            Hours
+                        </div>
                     </div>
                     <div className="row button-down" onClick={()=>dispatch(decrementHour())}></div>
-                    <div className="timer-class">
-                        Hours
-                    </div>
+
                 </div>
                 <div className="column">
                     <p className='col-name'>:</p>
@@ -34,11 +36,12 @@ function PomoSetting(){
                     </div>
                     <div className="row timer-box">
                         <p>{state.setMinute}</p>
+                        <div className="timer-class">
+                            Minutes
+                        </div>
                     </div>
                     <div className="row button-down" onClick={() =>dispatch(decrementMinute())}></div>
-                    <div className="timer-class">
-                        Minute
-                    </div>
+
                 </div>
                 <div className="column">
                     <p className='col-name'>:</p>
@@ -49,18 +52,26 @@ function PomoSetting(){
                     </div>
                     <div className="row timer-box">
                         <p>{state.setSecond}</p>
+                        <div className="timer-class">
+                            Seconds
+                        </div>
                     </div>
                     <div className="row button-down" onClick={() =>dispatch(decrementSecond())}></div>
-                    <div className="timer-class">
-                        Seconds
-                    </div>
                 </div>
             </div>
             <div className="row pomo-mode">
                 <p>Study Time</p>
             </div>
+            <div className="row pomo-buttom">
+                <div className="col-2" onClick ={() =>dispatch(resetCounter())}>
+                    <IntroButton title="Reset" />
+                </div>
+                <div className="col-2">
+                    <IntroButton title="Next"/>
+                </div>
+            </div>
         </div>
     )
 }
 
-export default PomoSetting;
+export default PomoSetStudy;
