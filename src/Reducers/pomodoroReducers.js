@@ -8,10 +8,13 @@ import {
     RESET_COUNTER,
     SET_ALERT,
     SET_TOGGLE,
+    START_TIMER,
+
 } from '../ActionTypes/actionTypes';
 
 const initialState = {
     currentMode: 0, // 0: StudySet, 1: RestSet, 2: Actual
+    countdownToggle: 0,
     setHour: 0,
     setMinute: 0,
     setSecond: 0,
@@ -26,6 +29,11 @@ const pomodoroReducer = (state =initialState,action) =>{
             return{
                 ...state,
                 currentMode: state.currentMode === 0 ? 1 : 0,
+            }
+        case START_TIMER:
+            return{
+                ...state,
+                currentMode: state.currentMode!== 2 ? 2 : state.currentMode,
             }
         case INCREMENT_HOUR:
             return{
@@ -79,6 +87,7 @@ const pomodoroReducer = (state =initialState,action) =>{
                 restSecond: state.currentMode===1? 0 : state.restSecond,
 
             }
+
         case SET_ALERT:
             return{
                 ...state,

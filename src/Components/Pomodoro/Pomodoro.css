@@ -158,3 +158,55 @@
 .study-text{
     color:#B43E69;
 }
+
+.countdown-container{
+    justify-content: center;
+}
+
+.countdown-box{
+    display: flex;
+    height: 8em;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 12px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 16px;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+}
+
+
+.countdown-box:hover,
+.countdown-box:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+.countdown-box:active {
+    opacity: .5;
+}
+.countdown{
+    font-size: 4em;
+    padding-left: 0.3em;
+}
+.comma{
+    padding-left: 0;
+    padding-right: 0.8em;
+}
+
+.label-box{
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
