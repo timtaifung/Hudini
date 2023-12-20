@@ -2,8 +2,12 @@ import "./Pomodoro.css"
 import PomoSetStudy from "./PomoSetStudy";
 import IntroButton from "../Introduction/IntroButton";
 import PomoSetRest from "./PomoSetRest";
+import {resetCounter} from "../../ActionTypes/actionTypes";
+import {useDispatch, useSelector} from "react-redux";
 
 function Pomodoro(){
+    const state =useSelector(state => state.pomodoro);
+    const dispatch = useDispatch();
     return(
         <div className="pomodoro-container container">
             <div className="row pomodoro-title">
@@ -14,6 +18,14 @@ function Pomodoro(){
             </div>
             <div className="row">
                 <PomoSetRest/>
+            </div>
+            <div className="row pomo-buttom">
+                <div className="col-2" onClick ={() =>dispatch(resetCounter())}>
+                    <IntroButton title="Reset" />
+                </div>
+                <div className="col-2">
+                    <IntroButton title="Confirm"/>
+                </div>
             </div>
 
         </div>

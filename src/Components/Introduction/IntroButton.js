@@ -1,8 +1,8 @@
 import "./Intro.css"
 
-function IntroButton({title}){
+function IntroButton({title, color}){
     return(
-        <div className="introButton container">
+        <div className="introButton container" style={{color: color}}>
             <p>{title}</p>
         </div>
     )

@@ -62,14 +62,7 @@ function PomoSetStudy(){
             <div className="row pomo-mode">
                 <p>Study Time</p>
             </div>
-            <div className="row pomo-buttom">
-                <div className="col-2" onClick ={() =>dispatch(resetCounter())}>
-                    <IntroButton title="Reset" />
-                </div>
-                <div className="col-2">
-                    <IntroButton title="Next"/>
-                </div>
-            </div>
+
         </div>
     )
 }

@@ -6,6 +6,8 @@ export const INCREMENT_HOUR = 'INCREMENT_HOUR';
 export const DECREMENT_HOUR = 'DECREMENT_HOUR';
 export const RESET_COUNTER = 'RESET_COUNTER';
 export const SET_ALERT = 'SET_ALERT';
+export const SET_STUDY = 'SET_STUDY';
+export const SET_REST = 'SET_REST';
 
 export const incrementSecond = () => ({ type: INCREMENT_SECOND });
 export const decrementSecond = () => ({ type: DECREMENT_SECOND });
@@ -14,4 +16,6 @@ export const decrementMinute = () => ({ type: DECREMENT_MINUTE });
 export const incrementHour = () => ({ type: INCREMENT_HOUR });
 export const decrementHour = () => ({ type: DECREMENT_HOUR });
 export const resetCounter = () => ({ type: RESET_COUNTER });
+export const setStudy = () => ({ type: SET_STUDY });
+export const setRest = () => ({ type: SET_REST });
 export const setAlert = (message) => ({ type: SET_ALERT, payload: message });

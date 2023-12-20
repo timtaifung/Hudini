@@ -62,14 +62,7 @@ function PomoSetRest(){
             <div className="row pomo-mode rest-text">
                 <p>Rest Mode</p>
             </div>
-            <div className="row pomo-buttom">
-                <div className="col-2" onClick ={() =>dispatch(resetCounter())}>
-                    <IntroButton title="Reset" />
-                </div>
-                <div className="col-2">
-                    <IntroButton title="Back"/>
-                </div>
-            </div>
+
         </div>
     )
 }
