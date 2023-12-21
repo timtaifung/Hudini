@@ -8,7 +8,7 @@ import {
     RESET_COUNTER,
     SET_ALERT,
     SET_TOGGLE,
-    START_TIMER,
+    START_TIMER, START,
 
 } from '../ActionTypes/actionTypes';
 
@@ -20,11 +20,17 @@ const initialState = {
     setSecond: 0,
     restHour: 0,
     restMinute: 0,
-    restSecond: 0,
+    restSecond: 6,
 }
 
 const pomodoroReducer = (state =initialState,action) =>{
     switch(action.type){
+        case START:
+            return{
+                ...state,
+                countdownToggle: state.countdownToggle === 1 ? 0: 1
+        }
+
         case SET_TOGGLE:
             return{
                 ...state,

@@ -2,7 +2,7 @@ import "./Pomodoro.css";
 import PomoSetStudy from "./PomoSetStudy";
 import IntroButton from "../Introduction/IntroButton";
 import PomoSetRest from "./PomoSetRest";
-import {resetCounter, setToggle, startTimer} from "../../ActionTypes/actionTypes";
+import {resetCounter, setToggle, start, startTimer} from "../../ActionTypes/actionTypes";
 import { useDispatch, useSelector } from "react-redux";
 import { useTransition, animated, useSpringRef } from "react-spring";
 import { useEffect, useState } from "react";
@@ -79,6 +79,9 @@ function Pomodoro() {
                 </div>
                 <div className="col-2" onClick={() => dispatch(setToggle())}>
                     <IntroButton title="Toggle" />
+                </div>
+                <div className="col-2" onClick={() => dispatch(start())}>
+                    <IntroButton title="Start" />
                 </div>
             </div>
         </div>
