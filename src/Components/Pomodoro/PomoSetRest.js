@@ -4,7 +4,7 @@ import {
     decrementMinute, decrementSecond,
     incrementHour,
     incrementMinute,
-    incrementSecond, resetCounter
+    incrementSecond, resetCounter, setToggle, startTimer
 } from "../../ActionTypes/actionTypes";
 import IntroButton from "../Introduction/IntroButton";
 
@@ -62,7 +62,17 @@ function PomoSetRest(){
             <div className="row pomo-mode rest-text">
                 <p>Rest Mode</p>
             </div>
-
+            <div className="row pomo-buttom">
+                <div className="col-2" onClick={() => dispatch(resetCounter())}>
+                    <IntroButton title="Reset" />
+                </div>
+                <div className="col-2" onClick={() => dispatch(startTimer())}>
+                    <IntroButton title="Confirm"  />
+                </div>
+                <div className="col-2" onClick={() => dispatch(setToggle())}>
+                    <IntroButton title="Toggle" />
+                </div>
+            </div>
         </div>
     )
 }

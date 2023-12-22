@@ -69,21 +69,6 @@ function Pomodoro() {
                 ))}
             </div>
 
-
-            <div className="row pomo-buttom">
-                <div className="col-2" onClick={() => dispatch(resetCounter())}>
-                    <IntroButton title="Reset" />
-                </div>
-                <div className="col-2" onClick={() => dispatch(startTimer())}>
-                    <IntroButton title="Confirm"  />
-                </div>
-                <div className="col-2" onClick={() => dispatch(setToggle())}>
-                    <IntroButton title="Toggle" />
-                </div>
-                <div className="col-2" onClick={() => dispatch(start())}>
-                    <IntroButton title="Start" />
-                </div>
-            </div>
         </div>
     );
 }

@@ -8,6 +8,7 @@ export const RESET_COUNTER = 'RESET_COUNTER';
 export const SET_ALERT = 'SET_ALERT';
 export const SET_TOGGLE = 'SET_TOGGLE';
 export const START_TIMER ='START_TIMER';
+export const STOP ='STOP';
 export const START ='START';
 
 
@@ -21,7 +22,9 @@ export const decrementHour = () => ({ type: DECREMENT_HOUR });
 export const resetCounter = () => ({ type: RESET_COUNTER });
 export const setToggle = () => ({ type: SET_TOGGLE });
 export const startTimer = () => ({ type: START_TIMER });
-export const start = () => ({ type: START });
+export const stopClock = () => ({ type: STOP });
+export const startClock = () => ({ type: START });
+
 
 
 
