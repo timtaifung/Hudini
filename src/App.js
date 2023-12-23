@@ -10,8 +10,8 @@ function App() {
           <Nav/>
       </header>
       <main>
-          {/*<Intro text="Welcome." delay={100}/>*/}
-          <Pomodoro/>
+          <Intro text="Welcome..." delay={100}/>
+          {/*<Pomodoro/>*/}
       </main>
     </div>
   );
