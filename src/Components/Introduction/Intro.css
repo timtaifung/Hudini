@@ -2,7 +2,13 @@
     box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
     font-family: monospace;
     margin-top: 5%;
-    max-width: 1700px;
+    max-width: 95%;
+}
+.past-project-container{
+    font-family: monospace;
+    margin-top: 5%;
+    max-width: 95%;
+    padding-bottom: 1em;
 }
 .intro-title{
     height: 1em;
@@ -122,3 +128,71 @@ figure.snip1113 h4 {
     font-size: 1.1em;
 }
 
+
+.stack-title-container{
+    align-items: center;
+    background: #1A202C;
+    border: 0 solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin-left: 0.9em;
+    padding-top: 4px;
+    text-decoration: none;
+    width: auto;
+    border-radius: 8px;
+    height: 2rem;
+}
+.text-grey{
+    color:#2472a4;
+}
+
+.stack-list{
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding-top: 4px;
+}
+
+.heading-frame {
+    box-shadow: 0 15px 20px rgba(0,0,0,0.4);
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto max-content;
+    background: #333 url('../../../clashRoyale.jpg') center;
+    background-size: cover;
+    width: 20rem;
+    height: 21rem;
+    padding-left: 4em;
+    border-radius: 12px;
+    margin-left: 1em;
+}
+
+.oop{
+    background: #333 url('../../../objectOriented.jpg') center;
+    background-size: contain;
+}
+
+.project-title{
+    color: #ab3326;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 5px 12px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.project-content{
+
+    font-size: 1em;
+    font-weight: bold;
+}
+.description-box{
+    padding-top: 1em;
+    align-content: center;
+    margin-left: 2em;
+}
+.project-container{
+    margin-top:1.2em;
+}
